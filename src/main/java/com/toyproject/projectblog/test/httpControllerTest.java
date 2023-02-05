@@ -1,10 +1,6 @@
 package com.toyproject.projectblog.test;
 
-import org.springframework.boot.context.properties.NestedConfigurationProperty;
 import org.springframework.web.bind.annotation.*;
-
-import javax.naming.Name;
-import java.lang.reflect.Member;
 
 @RestController
 public class httpControllerTest {
@@ -17,16 +13,11 @@ public class httpControllerTest {
 
         Memeber member = new Memeber();
 
-        Memeber mem1 =  Memeber.builder().email("test@naver.com").age(11).build();
-
-
-        System.out.println(TAG+", getter : "+member.getAge());
+        System.out.println(TAG + ", getter : " + member.getAge());
         member.setAge(111);
-        System.out.println(TAG+", setter : "+member.getAge());
+        System.out.println(TAG + ", setter : " + member.getAge());
 
-        System.out.println(TAG+", builder : "+mem1.toString());
-
-        return "test complete"+ mem1;
+        return "test";
     }
 
 
