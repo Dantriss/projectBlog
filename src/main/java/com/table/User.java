@@ -1,12 +1,19 @@
 package com.table;
 
-import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
-
 import java.sql.Timestamp;
 
+
+@NoArgsConstructor
+@Data
+@Builder
+@AllArgsConstructor
 @Entity //Class User가 MySQL에 테이블이 생성됨
 public class User {
 
