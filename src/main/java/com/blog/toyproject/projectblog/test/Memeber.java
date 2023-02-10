@@ -1,4 +1,4 @@
-package com.toyproject.projectblog.test;
+package com.blog.toyproject.projectblog.test;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

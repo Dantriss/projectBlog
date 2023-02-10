@@ -1,4 +1,4 @@
-package com.toyproject.projectblog.test;
+package com.blog.toyproject.projectblog.test;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
