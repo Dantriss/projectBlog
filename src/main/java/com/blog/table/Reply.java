@@ -1,4 +1,4 @@
-package com.table;
+package com.blog.table;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
