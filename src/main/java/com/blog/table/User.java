@@ -22,9 +22,10 @@ public class User {
 
     @Id //Primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) //프로젝트에서 연결된 DB의 넘버링 전략을 따라감
+
     private int user_idx; //Auto-increment
 
-    @Column(nullable = false, length = 20) // not null
+    @Column(nullable = false, length = 20, unique = true) // not null
     private String user_id;
 
     @Column(nullable = false, length = 50) //not null (비밀번호 암호화)
